@@ -1,0 +1,22 @@
+.icon {
+  // Icon dark:
+  &__primary {
+    fill: var(--primary);
+  }
+
+  // Icon light:
+  &__secondary {
+    fill: var(--secondary);
+  }
+
+  // Icon accent when hovering:
+  &__accent {
+    fill: currentColor;
+
+    &:hover {
+      @media screen and (min-width: $bp-laptop) {
+        fill: var(--accent);
+      }
+    }
+  }
+}

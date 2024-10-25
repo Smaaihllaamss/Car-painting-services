@@ -1,0 +1,116 @@
+.button-order {
+  display: block;
+  font-family: inherit;
+  font-size: 0.75rem; /* 0.75rem = 12px */
+  padding: 0.65em 1.5em;
+  color: var(--secondary);
+  background-color: transparent;
+  border: 2px solid var(--secondary);
+  border-radius: var(--b-radius);
+  cursor: pointer;
+  transition: border-color, color, background-color 0.2s;
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 1rem; /* 1rem = 16px */
+    padding: 0.66em 1.18em; /* макет: 0.75em 1.06e */
+  }
+
+  &:hover {
+    @media screen and (min-width: $bp-tablet) {
+      color: var(--secondary);
+      background-color: var(--accent);
+      border-color: var(--accent);
+    }
+  }
+}
+
+// Button-text of services-cards
+.button-text {
+  display: block;
+  width: fit-content;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.4em;
+  color: var(--accent);
+  background-color: transparent;
+  border: none;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: color 0.3s;
+
+  @media screen and (min-width: $bp-laptop) {
+    color: currentColor;
+  }
+
+  &:hover {
+    @media screen and (min-width: $bp-laptop) {
+      color: var(--accent);
+    }
+  }
+}
+
+// Button 'close' of mobile-menu, modal & gallery
+.button-close {
+  position: absolute;
+  font-family: inherit;
+  font-size: 1.25rem; /* 1.25rem = 20px */
+  padding: 0.1em 0.3em;
+  color: var(--secondary);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 2rem; /* 2rem = 32px */
+  }
+
+  @media screen and (min-width: $bp-laptop) {
+    font-size: 2.37rem; /* 2.37rem = 38px */
+  }
+}
+
+// Buttons 'prev-next' of gallery
+.swipe-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  z-index: 1200;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 10px 20px;
+  }
+  &__btn-prev {
+    transform: rotate(180deg);
+    left: -36px;
+
+    @media screen and (min-width: $bp-tablet) {
+      left: -70px;
+    }
+  }
+  &__btn-next {
+    right: -36px;
+
+    @media screen and (min-width: $bp-tablet) {
+      right: -70px;
+    }
+  }
+
+  &__btn-icon {
+    width: 8px;
+    height: 14px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 18px;
+      height: 32px;
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      width: 22px;
+      height: 38px;
+    }
+  }
+}

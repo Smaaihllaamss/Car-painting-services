@@ -1,0 +1,28 @@
+:root {
+  font-size: 16px;
+
+  --primary: #252525;
+  --secondary: #ffffff;
+  --thirdly: #e7e7e7;
+  --accent: #ed7173;
+  --yellow: #fccf02;
+  --element: #d4d4d4;
+  --elements2: #9b9d98;
+  --bg-section: #383838;
+  --bg-popup: rgba(33, 33, 33, 1); /* #212121 */
+  --bg-backdrop: rgba(33, 33, 33, 0.3);
+
+  // Font-family:
+  --font-family-text: Nunito, sans-serif;
+  --font-family-title: Roboto, sans-serif;
+
+  // Border-radius:
+  --b-radius: 4px;
+  --b-radius-2x2: 2px 2px 0 0;
+}
+
+// Breakpoints:
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+$bp-laptop: 960px;
+$bp-desktop: 1440px;

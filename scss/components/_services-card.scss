@@ -1,0 +1,198 @@
+.services-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 290px;
+  border: 2px solid var(--element);
+  border-radius: var(--b-radius);
+  transition: border-color 0.3s;
+
+  @media screen and (min-width: $bp-tablet) {
+    min-height: 224px;
+  }
+
+  @media screen and (min-width: $bp-laptop) {
+    min-height: 283px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    min-height: 360px;
+  }
+
+  &:hover {
+    @media screen and (min-width: $bp-laptop) {
+      border-color: var(--accent);
+    }
+  }
+
+  &__toggle-checkbox {
+    display: none;
+  }
+
+  &__toggle-label {
+    cursor: pointer;
+  }
+
+  &__add,
+  &__main {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 0.5s;
+  }
+
+  &__add {
+    display: flex;
+    flex-direction: column;
+    padding: 22px 22px 35px 22px;
+    background-color: var(--secondary);
+    text-align: left;
+    overflow: auto;
+    opacity: 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 15px;
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      padding: 22px 22px 35px 22px;
+    }
+  }
+
+  &__add-list {
+    padding-left: 1.2em;
+    margin-bottom: 1em;
+  }
+
+  &__add-list-item {
+    margin-top: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0.25em;
+      left: -1em;
+      width: 0.5em;
+      height: 0.5em;
+      border-radius: 50%;
+      background-color: currentColor;
+    }
+  }
+
+  &__add-list-item + &__add-list-item {
+    margin-top: 0.5em;
+
+    @media screen and (min-width: $bp-laptop) {
+      margin-top: 1em;
+    }
+  }
+
+  &__add-warranty-wrapper {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin-bottom: 1em;
+  }
+
+  &__add-warranty {
+    display: block;
+    position: relative;
+    left: 1.5em;
+
+    &::before {
+      content: "";
+      width: 1.42em;
+      height: 1.42em;
+      background-image: url(/images/medal-dark.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+      top: -0.22em;
+      left: -1.8em;
+
+      @media screen and (min-width: $bp-desktop) {
+        width: 1.44em;
+        height: 1.44em;
+      }
+    }
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 22px;
+    background-color: var(--secondary);
+    opacity: 1;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 9px;
+      height: 15px;
+      background-image: url(/images/next-dark.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border: none;
+      position: absolute;
+      top: 24px;
+      right: 18px;
+
+      @media screen and (min-width: $bp-tablet) {
+        width: 7px;
+        height: 12px;
+      }
+
+      @media screen and (min-width: $bp-laptop) {
+        width: 9px;
+        height: 15px;
+      }
+
+      @media screen and (min-width: $bp-desktop) {
+        width: 11px;
+        height: 19px;
+        right: 22px;
+      }
+    }
+  }
+
+  &__main-title {
+    font-size: 1.33em; /* 16px */
+    font-weight: 400;
+    text-align: left;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 1.25em; /* 20px */
+    }
+  }
+
+  &__main-img {
+    width: 100%;
+    height: min-content;
+    object-fit: cover;
+    margin: auto;
+
+    @media screen and (min-width: $bp-mobile) {
+      width: 70%;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__toggle-checkbox:checked ~ &__toggle-label .services-card__add {
+    opacity: 1;
+    z-index: 5;
+  }
+
+  &__toggle-checkbox:checked ~ &__toggle-label .services-card__main {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Центр автопокраски</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+      <header class="header text-secondary" id="header">
+        <div class="header__container">
+          <nav class="header__nav">
+            <a href="index.html">
+              <img
+                class="header__logo"
+                src="/images/logo-header.svg"
+                alt="Логотип центра автопокраски"
+              />
+            </a>
+            <ul class="header__menu">
+              <li><a class="link-header" href="index.html">Главная</a></li>
+              <li><a class="link-header" href="#">Услуги</a></li>
+              <li>
+                <a class="link-header" href="works.html">Примеры работ</a>
+              </li>
+              <li><a class="link-header" href="contacts.html">Контакты</a></li>
+            </ul>
+            <button class="header__burger menu-btn-open" type="button">
+              <svg
+                class="header__burger-icon icon__secondary"
+                width="29"
+                height="19"
+              >
+                <use href="/images/icons.svg#icon-burger"></use>
+              </svg>
+            </button>
+          </nav>
+          <address class="header__address">
+            <div class="header__location location-address">
+              <svg class="icon__secondary" width="15" height="15">
+                <use href="/images/icons.svg#icon-location"></use>
+              </svg>
+              <p class="header__location-text">Киев, ул. Ю. Кондратюка, 15</p>
+            </div>
+            <a class="link-tel link-tel__header" href="tel:+380930092375"
+              >+38 (093) 009-23-75</a
+            >
+          </address>
+          <div class="mobile-menu">
+            <div class="mobile-menu__wrapper">
+              <button
+                class="mobile-menu__btn-close menu-btn-close"
+                type="button"
+              >
+                <svg
+                  class="mobile-menu__icon-close icon__secondary"
+                  width="13"
+                  height="13"
+                >
+                  <use href="/images/icons.svg#icon-close"></use>
+                </svg>
+              </button>
+              <div class="mobile-menu__container">
+                <nav class="mobile-menu__nav">
+                  <ul class="mobile-menu__menu">
+                    <li class="mobile-menu__menu-item">
+                      <a href="index.html">Главная</a>
+                    </li>
+                    <li class="mobile-menu__menu-item">
+                      <a href="services.html">Услуги</a>
+                    </li>
+                    <li class="mobile-menu__menu-item">
+                      <a href="works.html">Примеры работ</a>
+                    </li>
+                    <li class="mobile-menu__menu-item">
+                      <a href="contacts.html">Контакты</a>
+                    </li>
+                  </ul>
+                </nav>
+                <address>
+                  <ul>
+                    <li class="mobile-menu__address-item">
+                      <a
+                        class="mobile-menu__address-link link-tel link-tel__footer"
+                        href="tel:+380930092375"
+                        >+38 (093) 009-23-75</a
+                      >
+                    </li>
+                    <li class="mobile-menu__address-item">
+                      <a
+                        class="mobile-menu__address-link link-tel link-tel__footer"
+                        href="tel:+380670092375"
+                        >+38 (067) 009-23-75</a
+                      >
+                    </li>
+                  </ul>
+                </address>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <!-- Services-page -->
+        <section class="services section__top-page text-centered">
+          <div class="container">
+            <header class="section__heading">
+              <h2 class="section__title section__title--primary">Услуги</h2>
+              <p class="section__heading-text services__text-1">
+                Выбирайте качественные материалы и проверенных исполнителей,
+                чтобы машина засияла как после салона
+              </p>
+              <p class="section__heading-text services__text-2">
+                6 лет мы помогаем автолюбителям и делаем качественную покраску и
+                ремонт авто на Оболони
+              </p>
+            </header>
+            <ul class="services__list">
+              <li class="services-card">
+                <input
+                  class="services-card__toggle-checkbox"
+                  type="checkbox"
+                  id="servicesCardToggle1"
+                />
+                <label
+                  for="servicesCardToggle1"
+                  class="services-card__toggle-label"
+                >
+                  <div class="services-card__add" id="servicesCardAdd1">
+                    <ul class="services-card__add-list">
+                      <li class="services-card__add-list-item">
+                        Покраска целиком 4 000 грн.
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Локальная покраска 1 700 грн.
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Съем установка 1 500 грн.
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Разбор 500 грн.
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Ремонтные работы оцениваются по факту осмотра
+                      </li>
+                    </ul>
+                    <div class="services-card__add-warranty-wrapper">
+                      <p class="services-card__add-warranty">1 год гарантии</p>
+                    </div>
+                    <button
+                      class="services-card__add-button button-text"
+                      type="button"
+                      id="openBtn1"
+                    >
+                      Оставить заявку
+                    </button>
+                  </div>
+                  <div class="services-card__main" id="servicesCardMain1">
+                    <h3 class="services-card__main-title">Бампер (передний)</h3>
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/services-bumper-front.webp    1x,
+                          ./images/services-bumper-front@2x.webp 2x
+                        "
+                      />
+                      <img
+                        class="services-card__main-img"
+                        src="./images/services-bumper-front.jpg"
+                        srcset="
+                          ./images/services-bumper-front.jpg    1x,
+                          ./images/services-bumper-front@2x.jpg 2x
+                        "
+                        alt="Передний бампер автомобиля"
+                      />
+                    </picture>
+                  </div>
+                </label>
+              </li>
+              <li class="services-card">
+                <input
+                  type="checkbox"
+                  class="services-card__toggle-checkbox"
+                  id="servicesCardToggle2"
+                />
+                <label
+                  for="servicesCardToggle2"
+                  class="services-card__toggle-label"
+                >
+                  <div class="services-card__add" id="servicesCardAdd2">
+                    <ul class="services-card__add-list">
+                      <li class="services-card__add-list-item">
+                        Покраска 5 000 грн.
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Локальная покраска от 2 000 грн.
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Съем установка 1 700 грн.
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Ремонтные работы оцениваются по факту осмотра
+                      </li>
+                    </ul>
+                    <div class="services-card__add-warranty-wrapper">
+                      <p class="services-card__add-warranty">1 год гарантии</p>
+                    </div>
+                    <button
+                      class="services-card__add-button button-text"
+                      type="button"
+                      id="openBtn2"
+                    >
+                      Оставить заявку
+                    </button>
+                  </div>
+                  <div class="services-card__main" id="servicesCardMain2">
+                    <h3 class="services-card__main-title">Капот</h3>
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/services-hood.webp    1x,
+                          ./images/services-hood@2x.webp 2x
+                        "
+                      />
+                      <img
+                        class="services-card__main-img"
+                        src="./images/services-hood.jpg"
+                        srcset="
+                          ./images/services-hood.jpg    1x,
+                          ./images/services-hood@2x.jpg 2x
+                        "
+                        alt="Капот автомобиля"
+                      />
+                    </picture>
+                  </div>
+                </label>
+              </li>
+              <li class="services-card">
+                <input
+                  type="checkbox"
+                  class="services-card__toggle-checkbox"
+                  id="servicesCardToggle3"
+                />
+                <label
+                  for="servicesCardToggle3"
+                  class="services-card__toggle-label"
+                >
+                  <div class="services-card__add" id="servicesCardAdd3">
+                    <ul class="services-card__add-list">
+                      <li class="services-card__add-list-item">
+                        Покраска целиком 4 000 грн.
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Локальная покраска 1 700 грн.
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Съем установка 1 500 грн.
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Разбор 500 грн.
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Ремонтные работы оцениваются по факту осмотра
+                      </li>
+                    </ul>
+                    <div class="services-card__add-warranty-wrapper">
+                      <p class="services-card__add-warranty">1 год гарантии</p>
+                    </div>
+                    <button
+                      class="services-card__add-button button-text"
+                      type="button"
+                      id="openBtn3"
+                    >
+                      Оставить заявку
+                    </button>
+                  </div>
+                  <div class="services-card__main" id="servicesCardMain3">
+                    <h3 class="services-card__main-title">Бампер (задний)</h3>
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/services-bumper-rear.webp    1x,
+                          ./images/services-bumper-rear@2x.webp 2x
+                        "
+                      />
+                      <img
+                        class="services-card__main-img"
+                        src="./images/services-bumper-rear.jpg"
+                        srcset="
+                          ./images/services-bumper-rear.jpg    1x,
+                          ./images/services-bumper-rear@2x.jpg 2x
+                        "
+                        alt="Задний бампер автомобиля"
+                      />
+                    </picture>
+                  </div>
+                </label>
+              </li>
+              <li class="services-card">
+                <input
+                  type="checkbox"
+                  class="services-card__toggle-checkbox"
+                  id="servicesCardToggle4"
+                />
+                <label
+                  for="servicesCardToggle4"
+                  class="services-card__toggle-label"
+                >
+                  <div class="services-card__add" id="servicesCardAdd4">
+                    <ul class="services-card__add-list">
+                      <li class="services-card__add-list-item">
+                        Покраска целиком 4 000 грн.
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Локальная покраска от 1 700 грн.
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Съём установка 1 700 грн.
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Покраска с двух сторон 5 500 грн.
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Разбор двери 7 500 грн. (молдинг, уплотнитель, ручка
+                        двери, зеркало боковое)
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Ремонтные работы оцениваются по факту осмотра
+                      </li>
+                    </ul>
+                    <div class="services-card__add-warranty-wrapper">
+                      <p class="services-card__add-warranty">1 год гарантии</p>
+                    </div>
+                    <button
+                      class="services-card__add-button button-text"
+                      type="button"
+                      id="openBtn4"
+                    >
+                      Оставить заявку
+                    </button>
+                  </div>
+                  <div class="services-card__main" id="servicesCardMain4">
+                    <h3 class="services-card__main-title">Дверь</h3>
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/services-door.webp    1x,
+                          ./images/services-door@2x.webp 2x
+                        "
+                      />
+                      <img
+                        class="services-card__main-img"
+                        src="./images/services-door.jpg"
+                        srcset="
+                          ./images/services-door.jpg    1x,
+                          ./images/services-door@2x.jpg 2x
+                        "
+                        alt="Дверь автомобиля"
+                      />
+                    </picture>
+                  </div>
+                </label>
+              </li>
+              <li class="services-card">
+                <input
+                  type="checkbox"
+                  class="services-card__toggle-checkbox"
+                  id="servicesCardToggle5"
+                />
+                <label
+                  for="servicesCardToggle5"
+                  class="services-card__toggle-label"
+                >
+                  <div class="services-card__add" id="servicesCardAdd5">
+                    <ul class="services-card__add-list">
+                      <li class="services-card__add-list-item">
+                        Покраска 3 500 грн.
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Локальная покраска от 1 700 грн.
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Требуется частичная разборка бампера 1 000 грн.
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Ремонтные работы оцениваются по факту осмотра
+                      </li>
+                    </ul>
+                    <div class="services-card__add-warranty-wrapper">
+                      <p class="services-card__add-warranty">1 год гарантии</p>
+                    </div>
+                    <button
+                      class="services-card__add-button button-text"
+                      type="button"
+                      id="openBtn5"
+                    >
+                      Оставить заявку
+                    </button>
+                  </div>
+                  <div class="services-card__main" id="servicesCardMain5">
+                    <h3 class="services-card__main-title">Крыло (заднее)</h3>
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/services-fender-rear.webp    1x,
+                          ./images/services-fender-rear@2x.webp 2x
+                        "
+                      />
+                      <img
+                        class="services-card__main-img"
+                        src="./images/services-fender-rear.jpg"
+                        srcset="
+                          ./images/services-fender-rear.jpg    1x,
+                          ./images/services-fender-rear@2x.jpg 2x
+                        "
+                        alt="Заднее крыло автомобиля"
+                      />
+                    </picture>
+                  </div>
+                </label>
+              </li>
+              <li class="services-card">
+                <input
+                  type="checkbox"
+                  class="services-card__toggle-checkbox"
+                  id="servicesCardToggle6"
+                />
+                <label
+                  for="servicesCardToggle6"
+                  class="services-card__toggle-label"
+                >
+                  <div class="services-card__add" id="servicesCardAdd6">
+                    <ul class="services-card__add-list">
+                      <li class="services-card__add-list-item">
+                        Покраска целиком 4 000 грн.
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Локальная покраска 1 700 грн.
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Съем установка 1 900 грн.
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Ремонтные работы оцениваются по факту осмотра
+                      </li>
+                    </ul>
+                    <div class="services-card__add-warranty-wrapper">
+                      <p class="services-card__add-warranty">1 год гарантии</p>
+                    </div>
+                    <button
+                      class="services-card__add-button button-text"
+                      type="button"
+                      id="openBtn6"
+                    >
+                      Оставить заявку
+                    </button>
+                  </div>
+                  <div class="services-card__main" id="servicesCardMain6">
+                    <h3 class="services-card__main-title">Крыло (переднее)</h3>
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/services-fender-front.webp    1x,
+                          ./images/services-fender-front@2x.webp 2x
+                        "
+                      />
+                      <img
+                        class="services-card__main-img"
+                        src="./images/services-fender-front.jpg"
+                        srcset="
+                          ./images/services-fender-front.jpg    1x,
+                          ./images/services-fender-front@2x.jpg 2x
+                        "
+                        alt="Переднее крыло автомобиля"
+                      />
+                    </picture>
+                  </div>
+                </label>
+              </li>
+              <li class="services-card">
+                <input
+                  type="checkbox"
+                  class="services-card__toggle-checkbox"
+                  id="servicesCardToggle7"
+                />
+                <label
+                  for="servicesCardToggle7"
+                  class="services-card__toggle-label"
+                >
+                  <div class="services-card__add" id="servicesCardAdd7">
+                    <ul class="services-card__add-list">
+                      <li class="services-card__add-list-item">
+                        Покраска целиком 1 800 грн.
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Съем установка 800 грн.
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Ремонтные работы оцениваются по факту осмотра
+                      </li>
+                    </ul>
+                    <div class="services-card__add-warranty-wrapper">
+                      <p class="services-card__add-warranty">1 год гарантии</p>
+                    </div>
+                    <button
+                      class="services-card__add-button button-text"
+                      type="button"
+                      id="openBtn7"
+                    >
+                      Оставить заявку
+                    </button>
+                  </div>
+                  <div class="services-card__main" id="servicesCardMain7">
+                    <h3 class="services-card__main-title">Зеркало (боковое)</h3>
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/services-mirror-side.webp    1x,
+                          ./images/services-mirror-side@2x.webp 2x
+                        "
+                      />
+                      <img
+                        class="services-card__main-img"
+                        src="./images/services-mirror-side.jpg"
+                        srcset="
+                          ./images/services-mirror-side.jpg    1x,
+                          ./images/services-mirror-side@2x.jpg 2x
+                        "
+                        alt="Боковое зеркало автомобиля"
+                      />
+                    </picture>
+                  </div>
+                </label>
+              </li>
+              <li class="services-card">
+                <input
+                  type="checkbox"
+                  class="services-card__toggle-checkbox"
+                  id="servicesCardToggle8"
+                />
+                <label
+                  for="servicesCardToggle8"
+                  class="services-card__toggle-label"
+                >
+                  <div class="services-card__add" id="servicesCardAdd8">
+                    <ul class="services-card__add-list">
+                      <li class="services-card__add-list-item">
+                        Покраска целиком 6 000 грн.
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Локальная покраска 1 500 грн.
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Съем установка 1 800 грн.
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Ремонтные работы оцениваются по факту осмотра
+                      </li>
+                    </ul>
+                    <div class="services-card__add-warranty-wrapper">
+                      <p class="services-card__add-warranty">1 год гарантии</p>
+                    </div>
+                    <button
+                      class="services-card__add-button button-text"
+                      type="button"
+                      id="openBtn8"
+                    >
+                      Оставить заявку
+                    </button>
+                  </div>
+                  <div class="services-card__main" id="servicesCardMain8">
+                    <h3 class="services-card__main-title">Крыша</h3>
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/services-roof.webp    1x,
+                          ./images/services-roof@2x.webp 2x
+                        "
+                      />
+                      <img
+                        class="services-card__main-img"
+                        src="./images/services-roof.jpg"
+                        srcset="
+                          ./images/services-roof.jpg    1x,
+                          ./images/services-roof@2x.jpg 2x
+                        "
+                        alt="Крыша автомобиля"
+                      />
+                    </picture>
+                  </div>
+                </label>
+              </li>
+              <li class="services-card">
+                <input
+                  type="checkbox"
+                  class="services-card__toggle-checkbox"
+                  id="servicesCardToggle9"
+                />
+                <label
+                  for="servicesCardToggle9"
+                  class="services-card__toggle-label"
+                >
+                  <div class="services-card__add" id="servicesCardAdd9">
+                    <ul class="services-card__add-list">
+                      <li class="services-card__add-list-item">
+                        Покраска целиком 3 500 грн.
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Локальная покраска 1 700 грн.
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Съем установка 1 700 грн.
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Сборка разборка 600 грн.
+                      </li>
+                      <li class="services-card__add-list-item">
+                        Ремонтные работы оцениваются по факту осмотра
+                      </li>
+                    </ul>
+                    <div class="services-card__add-warranty-wrapper">
+                      <p class="services-card__add-warranty">1 год гарантии</p>
+                    </div>
+                    <button
+                      class="services-card__add-button button-text"
+                      type="button"
+                      id="openBtn9"
+                    >
+                      Оставить заявку
+                    </button>
+                  </div>
+                  <div class="services-card__main" id="servicesCardMain9">
+                    <h3 class="services-card__main-title">Багажник</h3>
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/services-trunk.webp    1x,
+                          ./images/services-trunk@2x.webp 2x
+                        "
+                      />
+                      <img
+                        class="services-card__main-img"
+                        src="./images/services-trunk.jpg"
+                        srcset="
+                          ./images/services-trunk.jpg    1x,
+                          ./images/services-trunk@2x.jpg 2x
+                        "
+                        alt="Багажник автомобиля"
+                      />
+                    </picture>
+                  </div>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Contact-section -->
+        <section class="contact-section" id="contact-section-services">
+          <div class="contact-section__wrapper">
+            <div class="contact-section__container text-secondary">
+              <h2 class="visually-hidden">Контакты</h2>
+              <p class="contact-section__heading-text text-centered">
+                Испытайте снова ту радость, когда вы только купили блестящую
+                машинку в салоне! Качественный покрас и ремонт автомобиля - это
+                отличный вариант обновить авто без покупки нового
+              </p>
+              <div class="contact-section__inner">
+                <div class="contact-section__content">
+                  <address class="contact-section__add">
+                    <p class="contact-section__add-text">
+                      Фото для оценки стоимости ремонта можете отправить нам по
+                      контактам:
+                    </p>
+                    <div class="contact-section__apps">
+                      <a
+                        class="link-accent"
+                        href="https://whatsapp/avtopokraska"
+                        >WhatsApp</a
+                      >
+                      <p>/</p>
+                      <a class="link-accent" href="https://t.me/s/avtopokraska"
+                        >Telegram</a
+                      >
+                    </div>
+                    <a
+                      class="contact-section__email-link link-text"
+                      href="mailto:avtopokraska@gmail.com"
+                      >avtopokraska@gmail.com</a
+                    >
+                  </address>
+                  <form
+                    class="contact-section__form call-form"
+                    name="contact-form"
+                    autocomplete="off"
+                  >
+                    <div class="input__form-field">
+                      <label
+                        class="input__label visually-hidden"
+                        for="user-name"
+                        >Ваше имя</label
+                      >
+                      <input
+                        class="input__control"
+                        type="text"
+                        name="user-name"
+                        id="user-name"
+                        placeholder="Ваше имя"
+                        required
+                      />
+                    </div>
+
+                    <div class="input__form-field">
+                      <label class="input__label visually-hidden" for="user-tel"
+                        >+38-123-456-78-90</label
+                      >
+                      <input
+                        class="input__control"
+                        type="tel"
+                        name="user-tel"
+                        id="user-tel"
+                        pattern="\+38[0-9]{10}"
+                        placeholder="+380991234567"
+                        required
+                      />
+                    </div>
+
+                    <button
+                      class="button-order contact-section__form-button submit-btn"
+                      type="submit"
+                    >
+                      Заказать звонок
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <iframe
+            class="contact-section__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1268.2323512430671!2d30.464360013375558!3d50.525526147618535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d28b1f1d4905%3A0xbfe284b5cde389b!2z0YPQuy4g0K7RgNC40Y8g0JrQvtC90LTRgNCw0YLRjtC60LAsIDE1LCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1718128025096!5m2!1sru!2sua"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer text-secondary">
+        <div class="container">
+          <!-- Footer-mobile -->
+          <div class="footer-m">
+            <a href="index.html">
+              <img
+                class="footer-m__logo"
+                src="/images/logo-footer.svg"
+                alt="Логотип центра автопокраски"
+              />
+            </a>
+
+            <address>
+              <ul class="footer-m__address-list text-centered">
+                <li>
+                  <a href="tel:+380930092375">+38 (093) 009-23-75</a>
+                </li>
+                <li>
+                  <p>Киев, ул. Кондратюка, 15</p>
+                </li>
+                <li>
+                  <a href="mailto:avtopokraska@gmail.com"
+                    >avtopokraska@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <div class="footer__social-icons">
+                    <a href="https://whatsapp/avtopokraska">
+                      <svg class="icon__accent" width="25" height="25">
+                        <use href="/images/icons.svg#icon-whatsapp"></use>
+                      </svg>
+                    </a>
+
+                    <a href="https://t.me/s/avtopokraska">
+                      <svg class="icon__accent" width="25" height="25">
+                        <use href="/images/icons.svg#icon-telegram"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <!-- Footer-tablet -->
+          <div class="footer-t">
+            <a href="index.html">
+              <img
+                class="footer-t__logo"
+                src="/images/logo-footer.svg"
+                alt="Логотип центра автопокраски"
+              />
+            </a>
+            <address class="footer-t__address">
+              <ul class="footer-t__social-list text-centered">
+                <li class="footer-t__social-item">
+                  <a class="link-text" href="mailto:avtopokraska@gmail.com"
+                    >avtopokraska@gmail.com</a
+                  >
+                </li>
+                <li class="footer-t__social-item">
+                  <div class="footer__social-icons">
+                    <a href="https://whatsapp/avtopokraska">
+                      <svg class="icon__accent" width="25" height="25">
+                        <use href="/images/icons.svg#icon-whatsapp"></use>
+                      </svg>
+                    </a>
+
+                    <a href="https://t.me/s/avtopokraska">
+                      <svg class="icon__accent" width="25" height="25">
+                        <use href="/images/icons.svg#icon-telegram"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="footer-t__address-list">
+                <li class="footer-t__address-item icon-text-address">
+                  <svg class="icon__secondary" width="15" height="15">
+                    <use href="/images/icons.svg#icon-location"></use>
+                  </svg>
+                  <p>Киев, ул. Ю. Кондратюка, 15</p>
+                </li>
+                <li class="footer-t__address-item">
+                  <a
+                    class="footer-t__address-link link-tel link-tel__footer"
+                    href="tel:+380930092375"
+                    >+38 (093) 009-23-75</a
+                  >
+                  <a
+                    class="footer-t__address-link link-tel link-tel__footer"
+                    href="tel:+380670092375"
+                    >+38 (067) 009-23-75</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <!-- Footer-desktop -->
+          <div class="footer-d">
+            <div class="footer-d__container">
+              <a href="index.html">
+                <img
+                  class="footer-d__logo"
+                  src="/images/logo-footer.svg"
+                  alt="Логотип центра автопокраски"
+                />
+              </a>
+              <address class="footer-d__address">
+                <ul class="footer-d__address-list">
+                  <li class="footer-d__address-item icon-text-address">
+                    <svg class="icon__secondary" width="15" height="15">
+                      <use href="/images/icons.svg#icon-location"></use>
+                    </svg>
+                    <p>Киев, ул. Ю. Кондратюка, 15</p>
+                  </li>
+                  <li class="footer-d__address-item">
+                    <a class="link-text" href="mailto:avtopokraska@gmail.com"
+                      >avtopokraska@gmail.com</a
+                    >
+                  </li>
+                  <li class="footer-d__address-item">
+                    <div class="footer__social-icons">
+                      <a href="https://whatsapp/avtopokraska">
+                        <svg class="icon__accent" width="30" height="30">
+                          <use href="/images/icons.svg#icon-whatsapp"></use>
+                        </svg>
+                      </a>
+
+                      <a href="https://t.me/s/avtopokraska">
+                        <svg class="icon__accent" width="30" height="30">
+                          <use href="/images/icons.svg#icon-telegram"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="footer-d__address-item">
+                    <a
+                      class="footer-d__address-link link-tel link-tel__footer"
+                      href="tel:+380930092375"
+                      >+38 (093) 009-23-75</a
+                    >
+                    <a
+                      class="footer-d__address-link link-tel link-tel__footer"
+                      href="tel:+380670092375"
+                      >+38 (067) 009-23-75</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Modal Service Request > -->
+    <dialog class="modal" id="modalRequest">
+      <div class="modal__container">
+        <button
+          class="button-close modal__btn-close modal-btn-close"
+          type="button"
+          id="closeBtn1"
+        >
+          &times;
+        </button>
+        <div class="modal__heading text-centered">
+          <h2 class="modal__title section__title">Заявка на ремонт</h2>
+          <p class="section__heading-text">
+            Оставьте заявку на интересующие Вас услуги и наш специалист свяжется
+            с вами в ближайшее время.
+          </p>
+        </div>
+        <form
+          class="modal__form order-form"
+          name="order-form"
+          autocomplete="off"
+          method="dialog"
+        >
+          <div class="modal__checkbox-list">
+            <div class="modal__checkbox-item">
+              <input
+                class="modal__checkbox-input"
+                type="checkbox"
+                id="front-bumper-repair"
+                name="front-bumper-repair"
+              />
+              <label class="modal__checkbox-label" for="front-bumper-repair"
+                >Ремонт переднего бампера</label
+              >
+            </div>
+
+            <div class="modal__checkbox-item">
+              <input
+                class="modal__checkbox-input"
+                type="checkbox"
+                id="hood-repair"
+                name="hood-repair"
+              />
+              <label
+                class="modal__checkbox-label"
+                for="hood-repair"
+                class="modal__checkbox-label"
+                >Ремонт капота</label
+              >
+            </div>
+
+            <div class="modal__checkbox-item">
+              <input
+                class="modal__checkbox-input"
+                type="checkbox"
+                id="rear-bumper-repair"
+                name="rear-bumper-repair"
+              />
+              <label class="modal__checkbox-label" for="rear-bumper-repair"
+                >Ремонт заднего бампера</label
+              >
+            </div>
+
+            <div class="modal__checkbox-item modal__checkbox-item--2">
+              <div class="modal__checkbox-name">
+                <input
+                  class="modal__checkbox-input modal__checkbox-input--name"
+                  type="checkbox"
+                  id="door-repair"
+                  name="door-repair"
+                />
+                <label class="modal__checkbox-label" for="door-repair"
+                  >Ремонт двери</label
+                >
+              </div>
+
+              <div class="modal__checkbox-number">
+                <label class="modal__checkbox-label" for="door-repair-number"
+                  >Количество:</label
+                >
+                <input
+                  class="modal__checkbox-input modal__checkbox-input--num"
+                  type="number"
+                  id="door-repair-number"
+                  name="door-repair-number"
+                  min="1"
+                  max="6"
+                />
+              </div>
+            </div>
+
+            <div class="modal__checkbox-item modal__checkbox-item--2">
+              <div class="modal__checkbox-name">
+                <input
+                  class="modal__checkbox-input modal__checkbox-input--name"
+                  type="checkbox"
+                  id="rear-fender-repair"
+                  name="rear-fender-repair"
+                />
+                <label class="modal__checkbox-label" for="rear-fender-repair"
+                  >Ремонт заднего крыла</label
+                >
+              </div>
+
+              <div class="modal__checkbox-number">
+                <label
+                  class="modal__checkbox-label"
+                  for="rear-fender-repair-number"
+                  >Количество:</label
+                >
+                <input
+                  class="modal__checkbox-input modal__checkbox-input--num"
+                  type="number"
+                  id="rear-fender-repair-number"
+                  name="rear-fender-repair-number"
+                  min="1"
+                  max="2"
+                />
+              </div>
+            </div>
+
+            <div class="modal__checkbox-item modal__checkbox-item--2">
+              <div class="modal__checkbox-name">
+                <input
+                  class="modal__checkbox-input modal__checkbox-input--name"
+                  type="checkbox"
+                  id="front-fender-repair"
+                  name="front-fender-repair"
+                />
+                <label class="modal__checkbox-label" for="front-fender-repair"
+                  >Ремонт переднего крыла</label
+                >
+              </div>
+
+              <div class="modal__checkbox-number">
+                <label
+                  class="modal__checkbox-label"
+                  for="front-fender-repair-number"
+                  >Количество:</label
+                >
+                <input
+                  class="modal__checkbox-input modal__checkbox-input--num"
+                  type="number"
+                  id="front-fender-repair-number"
+                  name="front-fender-repair-number"
+                  min="1"
+                  max="2"
+                />
+              </div>
+            </div>
+
+            <div class="modal__checkbox-item modal__checkbox-item--2">
+              <div class="modal__checkbox-name">
+                <input
+                  class="modal__checkbox-input modal__checkbox-input--name"
+                  type="checkbox"
+                  id="mirror-side-repair"
+                  name="mirror-side-repair"
+                />
+                <label class="modal__checkbox-label" for="mirror-side-repair"
+                  >Ремонт бокового зеркала</label
+                >
+              </div>
+
+              <div class="modal__checkbox-number">
+                <label
+                  class="modal__checkbox-label"
+                  for="mirror-side-repair-number"
+                  >Количество:</label
+                >
+                <input
+                  class="modal__checkbox-input modal__checkbox-input--num"
+                  type="number"
+                  id="mirror-side-repair-number"
+                  name="mirror-side-repair-number"
+                  min="1"
+                  max="2"
+                />
+              </div>
+            </div>
+
+            <div class="modal__checkbox-item">
+              <input
+                class="modal__checkbox-input"
+                type="checkbox"
+                id="roof-repair"
+                name="roof-repair"
+              />
+              <label class="modal__checkbox-label" for="roof-repair"
+                >Ремонт крыши</label
+              >
+            </div>
+
+            <div class="modal__checkbox-item">
+              <input
+                class="modal__checkbox-input"
+                type="checkbox"
+                id="trunk-repair"
+                name="trunk-repair"
+              />
+              <label class="modal__checkbox-label" for="trunk-repair"
+                >Ремонт багажника</label
+              >
+            </div>
+
+            <p>
+              Для отправки заказа необходимо выбрать хотя бы один из пунктов
+              выше.
+            </p>
+          </div>
+
+          <div class="input__form-field input">
+            <label class="input__label visually-hidden" for="user-name"
+              >Ваше имя</label
+            >
+            <input
+              class="input__control"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Ваше имя"
+              required
+            />
+          </div>
+
+          <div class="input__form-field input">
+            <label class="input__label visually-hidden" for="user-tel"
+              >+38-999-999-99-99</label
+            >
+            <input
+              class="input__control"
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+              pattern="\+38[0-9]{10}"
+              placeholder="+380991234567"
+              required
+            />
+          </div>
+
+          <div class="input__form-field input">
+            <label class="input__label visually-hidden" for="user-message"
+              >User-message</label
+            >
+
+            <textarea
+              class="input__control input__textarea"
+              name="user-message"
+              id="user-message"
+              placeholder="Type your message..."
+            ></textarea>
+          </div>
+
+          <button
+            class="button-order modal__button order-submit-btn"
+            type="submit"
+          >
+            Оставить заявку
+          </button>
+
+          <div class="form-terms">
+            <div class="form-terms__checkbox">
+              <label class="form-terms__label visually-hidden" for="agree"
+                >I agree</label
+              >
+              <input type="checkbox" name="agree" id="agree" required />
+            </div>
+
+            <p class="form-terms__text">
+              Я согласен(на)
+              <a class="form-terms__link link-text" href="#"
+                >с политикой конфиденциальности</a
+              >.
+            </p>
+          </div>
+        </form>
+      </div>
+    </dialog>
+
+    <!-- Scripts -->
+    <script src="./js/header.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal-services-request.js"></script>
+    <script src="./js/btn-change-label.js"></script>
+  </body>
+</html>

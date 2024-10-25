@@ -1,0 +1,39 @@
+.feedback-card {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 20px 40px;
+  background-color: var(--secondary);
+  border-radius: var(--b-radius);
+
+  &__heading {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__user-photo {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    align-self: center;
+  }
+
+  &__inner {
+    align-self: center;
+  }
+
+  &__user-name {
+    font-family: var(--font-family-title);
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+
+  &__meta {
+    font-size: 0.91em; /* 0.91em = 11px */
+  }
+
+  &__user-status {
+    margin-bottom: 0;
+  }
+}

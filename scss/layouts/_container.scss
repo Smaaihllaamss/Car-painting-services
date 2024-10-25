@@ -1,0 +1,22 @@
+.container {
+  width: 100%;
+  max-width: 290px; /* 320-15*2 = 290px */
+  margin: 0 auto;
+  // padding: 0 15px;
+
+  @media screen and (min-width: $bp-mobile) {
+    max-width: 450px; /* 480-15*2 = 450px */
+  }
+
+  @media screen and (min-width: $bp-tablet) {
+    max-width: 742px; /* 712+15*2 = 742px */
+  }
+
+  @media screen and (min-width: $bp-laptop) {
+    max-width: 918px; /* 888+15*2 = 918px */
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    max-width: 1150px; /* 1120+15*2 = 1150px */
+  }
+}

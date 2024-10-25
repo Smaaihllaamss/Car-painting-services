@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Центр автопокраски</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+      <header class="header text-secondary">
+        <div class="header__container">
+          <nav class="header__nav">
+            <a href="index.html">
+              <img
+                class="header__logo"
+                src="/images/logo-header.svg"
+                alt="Логотип центра автопокраски"
+              />
+            </a>
+            <ul class="header__menu">
+              <li><a class="link-header" href="index.html">Главная</a></li>
+              <li><a class="link-header" href="services.html">Услуги</a></li>
+              <li>
+                <a class="link-header" href="works.html">Примеры работ</a>
+              </li>
+              <li><a class="link-header" href="#">Контакты</a></li>
+            </ul>
+            <button class="header__burger menu-btn-open" type="button">
+              <svg
+                class="header__burger-icon icon__secondary"
+                width="29"
+                height="19"
+              >
+                <use href="/images/icons.svg#icon-burger"></use>
+              </svg>
+            </button>
+          </nav>
+          <address class="header__address">
+            <div class="header__location location-address">
+              <svg class="icon__secondary" width="15" height="15">
+                <use href="/images/icons.svg#icon-location"></use>
+              </svg>
+              <p class="header__location-text">Киев, ул. Ю. Кондратюка, 15</p>
+            </div>
+            <a class="link-tel link-tel__header" href="tel:+380930092375"
+              >+38 (093) 009-23-75</a
+            >
+          </address>
+          <div class="mobile-menu">
+            <div class="mobile-menu__wrapper">
+              <button
+                class="mobile-menu__btn-close menu-btn-close"
+                type="button"
+              >
+                <svg class="mobile-menu__icon-close icon__secondary">
+                  <use href="/images/icons.svg#icon-close"></use>
+                </svg>
+              </button>
+              <div class="mobile-menu__container">
+                <nav class="mobile-menu__nav">
+                  <ul class="mobile-menu__menu">
+                    <li class="mobile-menu__menu-item">
+                      <a href="index.html">Главная</a>
+                    </li>
+                    <li class="mobile-menu__menu-item">
+                      <a href="services.html">Услуги</a>
+                    </li>
+                    <li class="mobile-menu__menu-item">
+                      <a href="works.html">Примеры работ</a>
+                    </li>
+                    <li class="mobile-menu__menu-item">
+                      <a href="contacts.html">Контакты</a>
+                    </li>
+                  </ul>
+                </nav>
+                <address>
+                  <ul>
+                    <li class="mobile-menu__address-item">
+                      <a
+                        class="mobile-menu__address-link link-tel link-tel__footer"
+                        href="tel:+380930092375"
+                        >+38 (093) 009-23-75</a
+                      >
+                    </li>
+                    <li class="mobile-menu__address-item">
+                      <a
+                        class="mobile-menu__address-link link-tel link-tel__footer"
+                        href="tel:+380670092375"
+                        >+38 (067) 009-23-75</a
+                      >
+                    </li>
+                  </ul>
+                </address>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <!-- Contact-section with changes -->
+        <section class="contact-section contacts-page" id="contact-section">
+          <div class="contact-section__wrapper contacts-page__wrapper">
+            <div class="contact-section__container text-secondary">
+              <h2 class="visually-hidden">Контакты</h2>
+              <p
+                class="contact-section__heading-text contacts-page__heading-text text-centered"
+              >
+                Обновите внешний вид своего авто у проверенных специалистов и по
+                лояльным ценам
+              </p>
+              <div class="contact-section__inner">
+                <address class="contacts-page__address">
+                  <p class="contacts-page__address-text">
+                    Мы находимся по адресу: <br />
+                    Киев, ул. Ю. Кондратюка, 15
+                  </p>
+                  <div class="contacts-page__address-links">
+                    <a
+                      class="contacts-page__address-link"
+                      href="tel:+380930092375"
+                      >+38 (093) 009-23-75</a
+                    >
+                    <a
+                      class="contacts-page__address-link"
+                      href="tel:+380670092375"
+                      >+38 (067) 009-23-75</a
+                    >
+                  </div>
+                </address>
+                <div class="contact-section__content">
+                  <address class="contact-section__add">
+                    <p class="contact-section__add-text">
+                      Фото для оценки стоимости ремонта можете отправить нам по
+                      контактам:
+                    </p>
+                    <div class="contact-section__apps">
+                      <a
+                        class="link-accent"
+                        href="https://whatsapp/avtopokraska"
+                        >WhatsApp</a
+                      >
+                      <p>/</p>
+                      <a class="link-accent" href="https://t.me/s/avtopokraska"
+                        >Telegram</a
+                      >
+                    </div>
+                    <a
+                      class="contact-section__email-link link-text"
+                      href="mailto:avtopokraska@gmail.com"
+                      >avtopokraska@gmail.com</a
+                    >
+                  </address>
+                  <form
+                    class="contact-section__form call-form"
+                    name="contact-form"
+                    autocomplete="off"
+                  >
+                    <div class="input__form-field">
+                      <label
+                        class="input__label visually-hidden"
+                        for="user-name"
+                        >Ваше имя</label
+                      >
+                      <input
+                        class="input__control"
+                        type="text"
+                        name="user-name"
+                        id="user-name"
+                        placeholder="Ваше имя"
+                        required
+                      />
+                    </div>
+
+                    <div class="input__form-field">
+                      <label class="input__label visually-hidden" for="user-tel"
+                        >+38-123-456-78-90</label
+                      >
+                      <input
+                        class="input__control"
+                        type="tel"
+                        name="user-tel"
+                        id="user-tel"
+                        pattern="\+38[0-9]{10}"
+                        placeholder="+380991234567"
+                        required
+                      />
+                    </div>
+
+                    <button
+                      class="button-order contact-section__form-button submit-btn"
+                      type="submit"
+                    >
+                      Заказать звонок
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <iframe
+            class="contacts-section__map contacts-page__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1268.2323512430671!2d30.464360013375558!3d50.525526147618535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d28b1f1d4905%3A0xbfe284b5cde389b!2z0YPQuy4g0K7RgNC40Y8g0JrQvtC90LTRgNCw0YLRjtC60LAsIDE1LCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1718128025096!5m2!1sru!2sua"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer text-secondary">
+        <div class="container">
+          <!-- Footer-mobile -->
+          <div class="footer-m">
+            <a href="index.html">
+              <img
+                class="footer-m__logo"
+                src="/images/logo-footer.svg"
+                alt="Логотип центра автопокраски"
+              />
+            </a>
+
+            <address>
+              <ul class="footer-m__address-list text-centered">
+                <li>
+                  <a href="tel:+380930092375">+38 (093) 009-23-75</a>
+                </li>
+                <li>
+                  <p>Киев, ул. Кондратюка, 15</p>
+                </li>
+                <li>
+                  <a href="mailto:avtopokraska@gmail.com"
+                    >avtopokraska@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <div class="footer__social-icons">
+                    <a href="https://whatsapp/avtopokraska">
+                      <svg class="icon__accent" width="25" height="25">
+                        <use href="/images/icons.svg#icon-whatsapp"></use>
+                      </svg>
+                    </a>
+
+                    <a href="https://t.me/s/avtopokraska">
+                      <svg class="icon__accent" width="25" height="25">
+                        <use href="/images/icons.svg#icon-telegram"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <!-- Footer-tablet -->
+          <div class="footer-t">
+            <a href="index.html">
+              <img
+                class="footer-t__logo"
+                src="/images/logo-footer.svg"
+                alt="Логотип центра автопокраски"
+              />
+            </a>
+            <address class="footer-t__address">
+              <ul class="footer-t__social-list text-centered">
+                <li class="footer-t__social-item">
+                  <a class="link-text" href="mailto:avtopokraska@gmail.com"
+                    >avtopokraska@gmail.com</a
+                  >
+                </li>
+                <li class="footer-t__social-item">
+                  <div class="footer__social-icons">
+                    <a href="https://whatsapp/avtopokraska">
+                      <svg class="icon__accent" width="25" height="25">
+                        <use href="/images/icons.svg#icon-whatsapp"></use>
+                      </svg>
+                    </a>
+
+                    <a href="https://t.me/s/avtopokraska">
+                      <svg class="icon__accent" width="25" height="25">
+                        <use href="/images/icons.svg#icon-telegram"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="footer-t__address-list">
+                <li class="footer-t__address-item icon-text-address">
+                  <svg class="icon__secondary" width="15" height="15">
+                    <use href="/images/icons.svg#icon-location"></use>
+                  </svg>
+                  <p>Киев, ул. Ю. Кондратюка, 15</p>
+                </li>
+                <li class="footer-t__address-item">
+                  <a
+                    class="footer-t__address-link link-tel link-tel__footer"
+                    href="tel:+380930092375"
+                    >+38 (093) 009-23-75</a
+                  >
+                  <a
+                    class="footer-t__address-link link-tel link-tel__footer"
+                    href="tel:+380670092375"
+                    >+38 (067) 009-23-75</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <!-- Footer-desktop -->
+          <div class="footer-d">
+            <div class="footer-d__container">
+              <a href="index.html">
+                <img
+                  class="footer-d__logo"
+                  src="/images/logo-footer.svg"
+                  alt="Логотип центра автопокраски"
+                />
+              </a>
+              <address class="footer-d__address">
+                <ul class="footer-d__address-list">
+                  <li class="footer-d__address-item icon-text-address">
+                    <svg class="icon__secondary" width="15" height="15">
+                      <use href="/images/icons.svg#icon-location"></use>
+                    </svg>
+                    <p>Киев, ул. Ю. Кондратюка, 15</p>
+                  </li>
+                  <li class="footer-d__address-item">
+                    <a class="link-text" href="mailto:avtopokraska@gmail.com"
+                      >avtopokraska@gmail.com</a
+                    >
+                  </li>
+                  <li class="footer-d__address-item">
+                    <div class="footer__social-icons">
+                      <a href="https://whatsapp/avtopokraska">
+                        <svg class="icon__accent" width="30" height="30">
+                          <use href="/images/icons.svg#icon-whatsapp"></use>
+                        </svg>
+                      </a>
+
+                      <a href="https://t.me/s/avtopokraska">
+                        <svg class="icon__accent" width="30" height="30">
+                          <use href="/images/icons.svg#icon-telegram"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="footer-d__address-item">
+                    <a
+                      class="footer-d__address-link link-tel link-tel__footer"
+                      href="tel:+380930092375"
+                      >+38 (093) 009-23-75</a
+                    >
+                    <a
+                      class="footer-d__address-link link-tel link-tel__footer"
+                      href="tel:+380670092375"
+                      >+38 (067) 009-23-75</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./js/header.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/btn-change-label.js"></script>
+  </body>
+</html>

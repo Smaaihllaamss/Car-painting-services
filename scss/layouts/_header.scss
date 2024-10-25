@@ -1,0 +1,145 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 20px 0 8px;
+  background-color: var(--bg-section);
+  border-bottom: 2px solid var(--secondary);
+  font-size: 1rem;
+  z-index: 1000;
+
+  @media screen and (min-width: $bp-laptop) {
+    padding: 16px 0 3px;
+  }
+
+  &__container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 0 28px;
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      padding: 0 36px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      padding: 0 40px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-grow: 1;
+
+    @media screen and (min-width: $bp-laptop) {
+      flex-grow: 0;
+      gap: 7.5vw;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      gap: 8.7vw;
+    }
+  }
+
+  &__logo {
+    width: 81px;
+    height: 30px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 142px;
+      height: 54px;
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      width: 181px;
+      height: 69px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 187px;
+      height: 71px;
+    }
+  }
+
+  &__menu {
+    display: none;
+
+    @media screen and (min-width: $bp-laptop) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-grow: 1;
+      gap: 3vw;
+      padding-bottom: 17px;
+    }
+  }
+
+  &__burger {
+    display: flex;
+    margin-bottom: 8px; /*16 - 8 = 8px */
+    background: transparent;
+    border: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 16px; /*24 - 8 = 16px */
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      display: none;
+    }
+  }
+
+  &__burger-icon {
+    width: 29px;
+    height: 19px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 47px;
+      height: 31px;
+    }
+  }
+
+  &__address {
+    display: none;
+
+    @media screen and (min-width: $bp-laptop) {
+      display: flex;
+      align-items: flex-end;
+      gap: 40px;
+      padding-bottom: 17px;
+    }
+  }
+
+  &__location {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+    }
+  }
+
+  &__location-text {
+    margin-bottom: 0;
+  }
+}
+
+.header-main {
+  background-color: transparent;
+  transition: background-color color 0.3s ease-in-out;
+}
+
+.header-main.scrolled {
+  background-color: #2a2e2f;
+  border-bottom: 2px solid var(--secondary);
+}

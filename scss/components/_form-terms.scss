@@ -1,0 +1,21 @@
+.form-terms {
+  display: flex;
+  gap: 0.5em;
+  font-size: 1em;
+  font-weight: 500;
+
+  &__checkbox {
+    display: flex;
+    align-self: center;
+  }
+
+  &__text {
+    align-self: center;
+  }
+
+  &__link {
+    display: inline-block;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}

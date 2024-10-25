@@ -1,0 +1,38 @@
+@import "./utils/fonts";
+@import "./utils/variables";
+@import "./base";
+@import "./utils/texts";
+@import "./utils/utils";
+
+@import "./layouts/section";
+
+@import "./components/buttons";
+@import "./components/feedback-card";
+@import "./components/icon-text";
+@import "./components/icons";
+@import "./components/input";
+@import "./components/links";
+@import "./components/service-card";
+@import "./components/services-card";
+@import "./components/work-card";
+
+@import "./layouts/about-section";
+@import "./layouts/contact-section";
+@import "./layouts/container";
+@import "./layouts/feedback-section";
+@import "./layouts/footer";
+@import "./layouts/gains-section";
+@import "./layouts/gallery";
+@import "./layouts/header";
+@import "./layouts/hero-section";
+@import "./layouts/mobile-menu";
+@import "./layouts/services-section";
+@import "./layouts/slider-feedback";
+@import "./layouts/works-section";
+@import "./layouts/modal";
+@import "./layouts/dialog-open";
+@import "./components/form-terms";
+
+@import "./pages/contacts-page";
+@import "./pages/services-page";
+@import "./pages/works-page";

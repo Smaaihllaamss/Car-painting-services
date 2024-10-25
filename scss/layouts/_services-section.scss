@@ -1,0 +1,44 @@
+.services-section {
+  &__text {
+    max-width: 260px;
+
+    @media screen and (min-width: $bp-mobile) {
+      max-width: 416px;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 440px;
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      max-width: 510px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 630px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+    @media screen and (min-width: $bp-tablet) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 13px;
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      gap: 17px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      gap: 20px;
+    }
+  }
+
+  &__item {
+    width: 100%;
+  }
+}

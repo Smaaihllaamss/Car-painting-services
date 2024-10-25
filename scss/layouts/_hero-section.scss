@@ -1,0 +1,198 @@
+.hero-section {
+  padding: 120px 0 20px;
+
+  background-image: -webkit-image-set(
+    url("/images/hero-bg.webp") 1x,
+    url("/images/hero-bg@2x.webp") 2x,
+    url("/images/hero-bg.jpg") 1x,
+    url("/images/hero-bg@2x.jpg") 2x
+  );
+
+  background-image: image-set(
+    url("/images/hero-bg.webp") type("image/webp") 1x,
+    url("/images/hero-bg@2x.webp") type("image/webp") 2x,
+    url("/images/hero-bg.jpg") type("image/jpg") 1x,
+    url("/images/hero-bg@2x.jpg") type("image/jpg") 2x
+  );
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 170px 0 50px;
+    font-size: 1rem; /* 1rem = 16px */
+  }
+
+  @media screen and (min-width: $bp-laptop) {
+    padding-top: 210px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 270px;
+  }
+
+  &__container {
+    padding-left: 0;
+    margin-bottom: 46px;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding-left: 8vw; /* 8vw=61px */
+      margin-bottom: 106px;
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      padding-left: 7.6vw; /* 7.6vw=73px */
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      padding-left: 6.6vw; /* 6.6vw=96px */
+      margin-bottom: 164px;
+    }
+  }
+
+  &__title {
+    max-width: 286px;
+    margin-bottom: 34px;
+    font-family: var(--font-family-title);
+    font-size: 1.56rem; /* 1.56rem = 22px */
+    font-weight: inherit;
+    line-height: 1.17;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 370px;
+      margin-bottom: 70px;
+      font-size: 2.62rem; /* 2.625rem = 42px */
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 470px;
+      margin-bottom: 50px;
+      font-size: 3rem; /* 3rem = 48px */
+    }
+
+    &--span {
+      display: block;
+      margin-top: 8px;
+      font-size: 0.87rem; /* 16px x 0.875rem = 14px */
+
+      @media screen and (min-width: $bp-tablet) {
+        margin-top: 18px;
+        font-size: 1.37rem; /* 1.375rem = 22px */
+      }
+
+      @media screen and (min-width: $bp-desktop) {
+        font-size: 1.75rem; /* 1.75rem = 28px */
+      }
+    }
+  }
+
+  &__links {
+    width: min(90vw, 290px);
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 100%;
+      display: flex;
+      gap: 20px;
+      font-size: 1rem; /* 1rem = 16px */
+    }
+  }
+
+  &__link + &__link {
+    margin-top: 14px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-top: 0;
+    }
+  }
+
+  &__text--m {
+    display: block;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
+    }
+  }
+
+  &__text--t {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 0, 875rem; /* 0.875rem = 14px */
+    color: var(--primary);
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      font-size: 1.125rem; /* 1.125rem = 18px */
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      padding: 0 20px;
+    }
+  }
+
+  &__list-item {
+    width: min(90vw, 290px);
+    height: min(9vh, 56px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 28px;
+    padding: 0.71em 1.21em; /* 14px x 0.71em = 10px, 1.21em = 17px */
+    background: var(--secondary);
+    border-radius: var(--b-radius);
+
+    @media screen and (min-width: $bp-tablet) {
+      width: min(28vw, 276px);
+      height: auto;
+      flex-direction: column;
+      gap: 11px;
+      padding: 0.85em; /* 14px x 0.85em = 12px */
+      text-align: center;
+      background: transparent;
+      border: 2px solid var(--secondary);
+      border-radius: var(--b-radius);
+      color: var(--secondary);
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      gap: 14px;
+      padding: 0.83em; /* 18px x 0.83em = 15px */
+    }
+  }
+
+  &__list-icon {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    align-self: center;
+    fill: var(--primary);
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 24px;
+      height: 24px;
+      fill: var(--secondary);
+      margin: 0 auto;
+    }
+
+    @media screen and (min-width: $bp-laptop) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

@@ -7,10 +7,12 @@
   background-color: var(--bg-backdrop);
   transform: translate(100%);
   visibility: hidden;
+  pointer-events: none;
   transition: visibility 0.1s, transform 0.3s;
 
   &.is-open {
     visibility: visible;
+    pointer-events: all;
     transform: translate(0);
   }
 

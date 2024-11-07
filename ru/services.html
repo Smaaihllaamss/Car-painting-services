@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Центр автопокраски</title>
+    <title>Услуги - Центр Автопокраски</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/main.min.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -15,41 +15,59 @@
       <header class="header text-secondary" id="header">
         <div class="header__container">
           <nav class="header__nav">
-            <a href="index.html">
+            <a href="home.html">
               <img
                 class="header__logo"
-                src="./images/logo-header.svg"
+                src="../images/logo-header.svg"
                 alt="Логотип центра автопокраски"
               />
             </a>
             <ul class="header__menu">
-              <li><a class="link-header" href="index.html">Главная</a></li>
+              <li><a class="link-header" href="home.html">Главная</a></li>
               <li><a class="link-header" href="#">Услуги</a></li>
               <li>
-                <a class="link-header" href="works.html">Примеры работ</a>
+                <a class="link-header" href="works.html">Наши работы</a>
               </li>
               <li><a class="link-header" href="contacts.html">Контакты</a></li>
             </ul>
-            <button class="header__burger menu-btn-open" type="button">
-              <svg
-                class="header__burger-icon icon__secondary"
-                width="29"
-                height="19"
+            <div class="header__mob-links-lang">
+              <a class="header__mob-link-lang" href="../uk/services.html"
+                >УКР</a
               >
-                <use href="./images/icons.svg#icon-burger"></use>
+              <a
+                class="header__mob-link-lang header__mob-link-lang--checked"
+                href="#"
+                >РУС</a
+              >
+            </div>
+            <button class="header__burger menu-btn-open" type="button">
+              <svg class="header__burger-icon icon__secondary">
+                <use href="../images/icons.svg#icon-burger"></use>
               </svg>
             </button>
           </nav>
           <address class="header__address">
-            <div class="header__location location-address">
+            <div class="header__location icon-text-address">
               <svg class="icon__secondary" width="15" height="15">
-                <use href="./images/icons.svg#icon-location"></use>
+                <use href="../images/icons.svg#icon-location"></use>
               </svg>
               <p class="header__location-text">Киев, ул. Ю. Кондратюка, 15</p>
             </div>
-            <a class="link-tel link-tel__header" href="tel:+380930092375"
-              >+38 (093) 009-23-75</a
-            >
+            <div>
+              <div class="header__lap-links-lang">
+                <a class="header__lap-link-lang" href="../uk/services.html"
+                  >УКР</a
+                >
+                <a
+                  class="header__lap-link-lang header__lap-link-lang--checked"
+                  href="#"
+                  >РУС</a
+                >
+              </div>
+              <a class="link-tel link-tel__header" href="tel:+380930092375"
+                >+38 (093) 009-23-75</a
+              >
+            </div>
           </address>
           <div class="mobile-menu">
             <div class="mobile-menu__wrapper">
@@ -62,20 +80,20 @@
                   width="13"
                   height="13"
                 >
-                  <use href="./images/icons.svg#icon-close"></use>
+                  <use href="../images/icons.svg#icon-close"></use>
                 </svg>
               </button>
               <div class="mobile-menu__container">
                 <nav class="mobile-menu__nav">
                   <ul class="mobile-menu__menu">
                     <li class="mobile-menu__menu-item">
-                      <a href="index.html">Главная</a>
+                      <a href="home.html">Главная</a>
                     </li>
                     <li class="mobile-menu__menu-item">
-                      <a href="services.html">Услуги</a>
+                      <a href="#">Услуги</a>
                     </li>
                     <li class="mobile-menu__menu-item">
-                      <a href="works.html">Примеры работ</a>
+                      <a href="works.html">Наши работы</a>
                     </li>
                     <li class="mobile-menu__menu-item">
                       <a href="contacts.html">Контакты</a>
@@ -85,18 +103,10 @@
                 <address>
                   <ul>
                     <li class="mobile-menu__address-item">
-                      <a
-                        class="mobile-menu__address-link link-tel link-tel__footer"
-                        href="tel:+380930092375"
-                        >+38 (093) 009-23-75</a
-                      >
+                      <a href="tel:+380930092375">+38 (093) 009-23-75</a>
                     </li>
                     <li class="mobile-menu__address-item">
-                      <a
-                        class="mobile-menu__address-link link-tel link-tel__footer"
-                        href="tel:+380670092375"
-                        >+38 (067) 009-23-75</a
-                      >
+                      <a href="tel:+380670092375">+38 (067) 009-23-75</a>
                     </li>
                   </ul>
                 </address>
@@ -166,16 +176,16 @@
                       <source
                         type="image/webp"
                         srcset="
-                          ./images/services-bumper-front.webp    1x,
-                          ./images/services-bumper-front@2x.webp 2x
+                          ../images/services-bumper-front.webp    1x,
+                          ../images/services-bumper-front@2x.webp 2x
                         "
                       />
                       <img
                         class="services-card__main-img"
-                        src="./images/services-bumper-front.jpg"
+                        src="../images/services-bumper-front.jpg"
                         srcset="
-                          ./images/services-bumper-front.jpg    1x,
-                          ./images/services-bumper-front@2x.jpg 2x
+                          ../images/services-bumper-front.jpg    1x,
+                          ../images/services-bumper-front@2x.jpg 2x
                         "
                         alt="Передний бампер автомобиля"
                       />
@@ -225,16 +235,16 @@
                       <source
                         type="image/webp"
                         srcset="
-                          ./images/services-hood.webp    1x,
-                          ./images/services-hood@2x.webp 2x
+                          ../images/services-hood.webp    1x,
+                          ../images/services-hood@2x.webp 2x
                         "
                       />
                       <img
                         class="services-card__main-img"
-                        src="./images/services-hood.jpg"
+                        src="../images/services-hood.jpg"
                         srcset="
-                          ./images/services-hood.jpg    1x,
-                          ./images/services-hood@2x.jpg 2x
+                          ../images/services-hood.jpg    1x,
+                          ../images/services-hood@2x.jpg 2x
                         "
                         alt="Капот автомобиля"
                       />
@@ -287,16 +297,16 @@
                       <source
                         type="image/webp"
                         srcset="
-                          ./images/services-bumper-rear.webp    1x,
-                          ./images/services-bumper-rear@2x.webp 2x
+                          ../images/services-bumper-rear.webp    1x,
+                          ../images/services-bumper-rear@2x.webp 2x
                         "
                       />
                       <img
                         class="services-card__main-img"
-                        src="./images/services-bumper-rear.jpg"
+                        src="../images/services-bumper-rear.jpg"
                         srcset="
-                          ./images/services-bumper-rear.jpg    1x,
-                          ./images/services-bumper-rear@2x.jpg 2x
+                          ../images/services-bumper-rear.jpg    1x,
+                          ../images/services-bumper-rear@2x.jpg 2x
                         "
                         alt="Задний бампер автомобиля"
                       />
@@ -353,16 +363,16 @@
                       <source
                         type="image/webp"
                         srcset="
-                          ./images/services-door.webp    1x,
-                          ./images/services-door@2x.webp 2x
+                          ../images/services-door.webp    1x,
+                          ../images/services-door@2x.webp 2x
                         "
                       />
                       <img
                         class="services-card__main-img"
-                        src="./images/services-door.jpg"
+                        src="../images/services-door.jpg"
                         srcset="
-                          ./images/services-door.jpg    1x,
-                          ./images/services-door@2x.jpg 2x
+                          ../images/services-door.jpg    1x,
+                          ../images/services-door@2x.jpg 2x
                         "
                         alt="Дверь автомобиля"
                       />
@@ -412,16 +422,16 @@
                       <source
                         type="image/webp"
                         srcset="
-                          ./images/services-fender-rear.webp    1x,
-                          ./images/services-fender-rear@2x.webp 2x
+                          ../images/services-fender-rear.webp    1x,
+                          ../images/services-fender-rear@2x.webp 2x
                         "
                       />
                       <img
                         class="services-card__main-img"
-                        src="./images/services-fender-rear.jpg"
+                        src="../images/services-fender-rear.jpg"
                         srcset="
-                          ./images/services-fender-rear.jpg    1x,
-                          ./images/services-fender-rear@2x.jpg 2x
+                          ../images/services-fender-rear.jpg    1x,
+                          ../images/services-fender-rear@2x.jpg 2x
                         "
                         alt="Заднее крыло автомобиля"
                       />
@@ -471,16 +481,16 @@
                       <source
                         type="image/webp"
                         srcset="
-                          ./images/services-fender-front.webp    1x,
-                          ./images/services-fender-front@2x.webp 2x
+                          ../images/services-fender-front.webp    1x,
+                          ../images/services-fender-front@2x.webp 2x
                         "
                       />
                       <img
                         class="services-card__main-img"
-                        src="./images/services-fender-front.jpg"
+                        src="../images/services-fender-front.jpg"
                         srcset="
-                          ./images/services-fender-front.jpg    1x,
-                          ./images/services-fender-front@2x.jpg 2x
+                          ../images/services-fender-front.jpg    1x,
+                          ../images/services-fender-front@2x.jpg 2x
                         "
                         alt="Переднее крыло автомобиля"
                       />
@@ -527,16 +537,16 @@
                       <source
                         type="image/webp"
                         srcset="
-                          ./images/services-mirror-side.webp    1x,
-                          ./images/services-mirror-side@2x.webp 2x
+                          ../images/services-mirror-side.webp    1x,
+                          ../images/services-mirror-side@2x.webp 2x
                         "
                       />
                       <img
                         class="services-card__main-img"
-                        src="./images/services-mirror-side.jpg"
+                        src="../images/services-mirror-side.jpg"
                         srcset="
-                          ./images/services-mirror-side.jpg    1x,
-                          ./images/services-mirror-side@2x.jpg 2x
+                          ../images/services-mirror-side.jpg    1x,
+                          ../images/services-mirror-side@2x.jpg 2x
                         "
                         alt="Боковое зеркало автомобиля"
                       />
@@ -586,16 +596,16 @@
                       <source
                         type="image/webp"
                         srcset="
-                          ./images/services-roof.webp    1x,
-                          ./images/services-roof@2x.webp 2x
+                          ../images/services-roof.webp    1x,
+                          ../images/services-roof@2x.webp 2x
                         "
                       />
                       <img
                         class="services-card__main-img"
-                        src="./images/services-roof.jpg"
+                        src="../images/services-roof.jpg"
                         srcset="
-                          ./images/services-roof.jpg    1x,
-                          ./images/services-roof@2x.jpg 2x
+                          ../images/services-roof.jpg    1x,
+                          ../images/services-roof@2x.jpg 2x
                         "
                         alt="Крыша автомобиля"
                       />
@@ -648,16 +658,16 @@
                       <source
                         type="image/webp"
                         srcset="
-                          ./images/services-trunk.webp    1x,
-                          ./images/services-trunk@2x.webp 2x
+                          ../images/services-trunk.webp    1x,
+                          ../images/services-trunk@2x.webp 2x
                         "
                       />
                       <img
                         class="services-card__main-img"
-                        src="./images/services-trunk.jpg"
+                        src="../images/services-trunk.jpg"
                         srcset="
-                          ./images/services-trunk.jpg    1x,
-                          ./images/services-trunk@2x.jpg 2x
+                          ../images/services-trunk.jpg    1x,
+                          ../images/services-trunk@2x.jpg 2x
                         "
                         alt="Багажник автомобиля"
                       />
@@ -766,10 +776,10 @@
         <div class="container">
           <!-- Footer-mobile -->
           <div class="footer-m">
-            <a href="index.html">
+            <a href="home.html">
               <img
                 class="footer-m__logo"
-                src="./images/logo-footer.svg"
+                src="../images/logo-footer.svg"
                 alt="Логотип центра автопокраски"
               />
             </a>
@@ -791,13 +801,13 @@
                   <div class="footer__social-icons">
                     <a href="https://whatsapp/avtopokraska">
                       <svg class="icon__accent" width="25" height="25">
-                        <use href="./images/icons.svg#icon-whatsapp"></use>
+                        <use href="../images/icons.svg#icon-whatsapp"></use>
                       </svg>
                     </a>
 
                     <a href="https://t.me/s/avtopokraska">
                       <svg class="icon__accent" width="25" height="25">
-                        <use href="./images/icons.svg#icon-telegram"></use>
+                        <use href="../images/icons.svg#icon-telegram"></use>
                       </svg>
                     </a>
                   </div>
@@ -808,10 +818,10 @@
 
           <!-- Footer-tablet -->
           <div class="footer-t">
-            <a href="index.html">
+            <a href="home.html">
               <img
                 class="footer-t__logo"
-                src="./images/logo-footer.svg"
+                src="../images/logo-footer.svg"
                 alt="Логотип центра автопокраски"
               />
             </a>
@@ -826,13 +836,13 @@
                   <div class="footer__social-icons">
                     <a href="https://whatsapp/avtopokraska">
                       <svg class="icon__accent" width="25" height="25">
-                        <use href="./images/icons.svg#icon-whatsapp"></use>
+                        <use href="../images/icons.svg#icon-whatsapp"></use>
                       </svg>
                     </a>
 
                     <a href="https://t.me/s/avtopokraska">
                       <svg class="icon__accent" width="25" height="25">
-                        <use href="./images/icons.svg#icon-telegram"></use>
+                        <use href="../images/icons.svg#icon-telegram"></use>
                       </svg>
                     </a>
                   </div>
@@ -841,7 +851,7 @@
               <ul class="footer-t__address-list">
                 <li class="footer-t__address-item icon-text-address">
                   <svg class="icon__secondary" width="15" height="15">
-                    <use href="./images/icons.svg#icon-location"></use>
+                    <use href="../images/icons.svg#icon-location"></use>
                   </svg>
                   <p>Киев, ул. Ю. Кондратюка, 15</p>
                 </li>
@@ -864,10 +874,10 @@
           <!-- Footer-desktop -->
           <div class="footer-d">
             <div class="footer-d__container">
-              <a href="index.html">
+              <a href="home.html">
                 <img
                   class="footer-d__logo"
-                  src="./images/logo-footer.svg"
+                  src="../images/logo-footer.svg"
                   alt="Логотип центра автопокраски"
                 />
               </a>
@@ -875,7 +885,7 @@
                 <ul class="footer-d__address-list">
                   <li class="footer-d__address-item icon-text-address">
                     <svg class="icon__secondary" width="15" height="15">
-                      <use href="./images/icons.svg#icon-location"></use>
+                      <use href="../images/icons.svg#icon-location"></use>
                     </svg>
                     <p>Киев, ул. Ю. Кондратюка, 15</p>
                   </li>
@@ -888,13 +898,13 @@
                     <div class="footer__social-icons">
                       <a href="https://whatsapp/avtopokraska">
                         <svg class="icon__accent" width="30" height="30">
-                          <use href="./images/icons.svg#icon-whatsapp"></use>
+                          <use href="../images/icons.svg#icon-whatsapp"></use>
                         </svg>
                       </a>
 
                       <a href="https://t.me/s/avtopokraska">
                         <svg class="icon__accent" width="30" height="30">
-                          <use href="./images/icons.svg#icon-telegram"></use>
+                          <use href="../images/icons.svg#icon-telegram"></use>
                         </svg>
                       </a>
                     </div>
@@ -1199,9 +1209,9 @@
     </dialog>
 
     <!-- Scripts -->
-    <script src="./js/header.js"></script>
-    <script src="./js/mobile-menu.js"></script>
-    <script src="./js/modal-services-request.js"></script>
-    <script src="./js/btn-change-label.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/mobile-menu.js"></script>
+    <script src="../js/modal-services-request.js"></script>
+    <script src="../js/btn-change-label.js"></script>
   </body>
 </html>
